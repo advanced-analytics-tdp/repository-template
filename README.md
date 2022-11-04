@@ -115,7 +115,7 @@ Describir el proceso de modelamiento: selección de variables, elección de algo
 ### 3.1. Configuración de entorno de ejecución
 Describir las caraterísticas del ambiente de ejecución: (laptop, cluster). De ser necesario especificar librerías a instalar.
 
-   ```sh   
+   ````sh   
    conda create --name py38 --file pagodigital_env.txt
    conda activate py38
    ````
@@ -149,7 +149,7 @@ data_sources_quality = check_all_data_sources(conf_param['data-sources']['valida
 
 ````sql 
    call dbi_min.SP_MODELOPAGODIGITAL_REPLICA ('2022-04-01')
-   ```` 
+```` 
 
 <div id="ejecutar-replica"></div>
 
@@ -157,9 +157,9 @@ data_sources_quality = check_all_data_sources(conf_param['data-sources']['valida
 
 Detallar el paso a paso para la réplica del modelo. Especificar ruta del objeto, scripts, shells, notebooks, etc.
 
-```shell
+````shell
    nohup python -u replica/main.py &
-   ```
+````
 
 <p align="right">(<a href="#top">inicio</a>)</p>
 
